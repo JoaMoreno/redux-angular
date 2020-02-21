@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noEmitHelpers": true,
+        "sourceMap": true,
+        "lib": [
+            "ES2016",
+            "DOM"
+        ]
+    },
+    "compileOnSave": false,
+    "buildOnsave": false
+}
