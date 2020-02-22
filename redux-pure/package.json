@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsnd": "ts-node-dev",
-    "dev": "ts-node-dev --respawn src --watch"
+    "build":"tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon -e ts --exec \"npm run build && npm start\"",
+    "devts": "ts-node-dev --respawn src/app.ts --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^13.7.4",
+    "nodemon": "^2.0.2",
     "ts-node": "^8.6.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.2"
